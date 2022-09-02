@@ -1,0 +1,13 @@
+version: 1
+theme: duotone
+title: A Newsletter Theme
+subtitle: Duotone
+header:
+  headline: Official basic newsletter theme for [broadcast](https://github.com/mahgoh/broadcast).
+footer:
+  signature: This example can be found at [examples/duotone](https://github.com/mahgoh/broadcast/tree/main/examples/duotone).
+topics:
+  - heading: 'Totam cupiditate ad'
+    content: 'Lorem ipsum dolor sit, amet _consectetur adipisicing_ elit. Fugit, nihil quo exercitationem adipisci ipsa facilis tempore quasi illo, dicta eos sed incidunt fugiat neque eaque ad itaque soluta fuga voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut **exercitationem** cum tempore nemo officiis natus nisi adipisci eius repudiandae debitis assumenda nihil quod asperiores harum quisquam, nobis aliquid [nostrum](#) quibusdam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium porro enim ex inventore. Facilis placeat, doloremque odio totam cupiditate ad, laudantium repudiandae at praesentium temporibus quo [libero](#) quas natus nobis?'
+  - heading: 'Supported styling rules'
+    content: 'The headline, signature, and content of topics can be styled with **bold** (&#42;&#42;bold&#42;&#42;), _italic_ (&#95;italic&#95;), `code` (&#96;code&#96;), and [link](#) (&#91;link&#93;&#40;#&#41;) elements - following the Markdown syntax. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt natus impedit culpa architecto iusto asperiores similique pariatur, nostrum, magnam beatae debitis ad praesentium. Vitae, odit eaque et non quod est? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis rerum suscipit iste, dolorem quisquam, tempora est, ex doloribus quas temporibus repellat facere. Deserunt nihil quos illum veniam laborum autem consequatur!'

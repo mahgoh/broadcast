@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+    <style type="text/css">
+      /* Outlook.com */
+      table {
+        border-collapse: separate;
+      }
+      a,
+      a:link,
+      a:visited {
+        font-weight: bold;
+        text-decoration: none;
+        color: rgb(94, 44, 231);
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      h2,
+      h2 a,
+      h2 a:visited,
+      h3,
+      h3 a,
+      h3 a:visited,
+      h4,
+      h5,
+      h6,
+      .t_cht {
+        color: #000 !important;
+      }
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td {
+        line-height: 100%;
+      }
+      .ExternalClass {
+        width: 100%;
+      }
+
+      /* Template */
+      html,
+      body {
+        margin: 0;
+        padding: 15px;
+        font-size: 15px;
+        line-height: 150%;
+        font-family: system-ui, sans-serif;
+      }
+
+      h1 {
+        display: inline-block;
+        font-size: 36px;
+        margin: 20px 0 0 0;
+        font-weight: 800;
+      }
+
+      h3 {
+        color: rgb(94, 44, 231) !important;
+        font-size: 26px;
+        margin: 10px 0 25px 0;
+      }
+
+      .headline {
+        font-size: 18px;
+      }
+
+      .headline code {
+        font-size: 17px;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      .section {
+        border-bottom: 3px solid rgb(242 237 255);
+        padding: 10px 0 20px 0;
+      }
+
+      h2 {
+        margin: 20px 0 0 0;
+        font-size: 18px;
+      }
+
+      h2 span {
+        display: inline-block;
+        width: 20px;
+        color: rgb(94, 44, 231);
+      }
+
+      p {
+        margin: 10px 0;
+      }
+
+      code {
+        background: rgb(242 237 255);
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>{{ .Title }}</h1>
+    <h3>{{ .Subtitle }}</h3>
+    <p class="headline">{{ .Header.Headline | noEscape }}</p>
+    <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 25px">
+      {{ range $i, $val := .Topics }}
+      <tr>
+        <td class="section">
+          <table>
+            <tr>
+              <td>
+                <h2><span>{{$i | increment}}</span> {{ .Heading }}</h2>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>{{ .Content | noEscape}}</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      {{ end }}
+    </table>
+    <p>{{ .Footer.Signature | noEscape }}</p>
+  </body>
+</html>
